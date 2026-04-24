@@ -2,6 +2,8 @@
 
 Local, dependency-free visualizer for Codex and Claude Code JSONL traces.
 
+![Agent Trace Visualizer screenshot](docs/agent-trace-visualizer.png)
+
 ## Install
 
 From this directory:
