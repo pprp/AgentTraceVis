@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-trace-vis"
+version = "0.1.0"
+description = "Local Codex and Claude Code JSONL trace visualizer"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "AgentTraceVis contributors" }
+]
+license = { text = "MIT" }
+keywords = ["codex", "claude", "trace", "jsonl", "visualizer"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Debuggers",
+]
+dependencies = []
+
+[project.scripts]
+tvis = "agent_trace_vis:main"
+
+[tool.setuptools]
+py-modules = ["agent_trace_vis"]
+include-package-data = true
+
+[tool.setuptools.data-files]
+"share/agent-trace-vis/vendor" = ["vendor/mermaid.min.js"]
